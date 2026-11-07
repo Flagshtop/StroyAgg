@@ -1,0 +1,41 @@
+{
+  "_comment": "Настройки площадок. Можно править без пересборки: файл рядом с StroyAgg.exe имеет приоритет. product_href — регулярное выражение для ссылок на карточку товара. Поля card/title/price/delivery (CSS-селекторы) необязательны: если пусты, карточки находятся автоматически.",
+  "sites": [
+    {
+      "id": "yandex",
+      "name": "Яндекс Маркет",
+      "enabled": true,
+      "home": "https://market.yandex.ru/",
+      "search_url": "https://market.yandex.ru/search?text={q}",
+      "product_href": "market\\.yandex\\.ru/(product--|card/)",
+      "selectors": {"card": "", "title": "", "price": "", "delivery": ""}
+    },
+    {
+      "id": "lemana",
+      "name": "Лемана ПРО (Леруа Мерлен)",
+      "enabled": true,
+      "home": "https://lemanapro.ru/",
+      "search_url": "https://lemanapro.ru/search/?q={q}",
+      "product_href": "lemanapro\\.ru/product/",
+      "selectors": {"card": "", "title": "", "price": "", "delivery": ""}
+    },
+    {
+      "id": "petrovich",
+      "name": "Петрович",
+      "enabled": true,
+      "home": "https://petrovich.ru/",
+      "search_url": "https://petrovich.ru/search/?q={q}",
+      "product_href": "petrovich\\.ru/catalog/\\d+/\\d+/?",
+      "selectors": {"card": "", "title": "", "price": "", "delivery": ""}
+    },
+    {
+      "id": "vseinstrumenti",
+      "name": "ВсеИнструменты.ру",
+      "enabled": true,
+      "home": "https://www.vseinstrumenti.ru/",
+      "search_url": "https://www.vseinstrumenti.ru/search/?what={q}",
+      "product_href": "vseinstrumenti\\.ru/product/",
+      "selectors": {"card": "", "title": "", "price": "", "delivery": ""}
+    }
+  ]
+}
